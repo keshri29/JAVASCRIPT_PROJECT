@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    height: 300px;
+    width: 250px;
+    border-radius:10px;
+    background-color: rebeccapurple;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#container img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+
+}
+
+#container i{
+    color: aliceblue;
+    font-size: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+ transform:translate(-50%, -50%)  scale(0);
+ opacity: 0;
+ transition: transform ease 0.5s;
+}
